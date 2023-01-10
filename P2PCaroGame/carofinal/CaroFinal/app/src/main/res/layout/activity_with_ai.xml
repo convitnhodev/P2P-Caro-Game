@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F6F6F6"
+    android:layout_height="match_parent"
+    android:id="@+id/huhuhu"
+    tools:context=".AiGameActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+
+        <ImageView
+            android:id="@+id/offline_game_back_btn"
+            android:layout_width="0dp"
+            android:padding="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"></View>
+        <ImageView
+            android:id="@+id/newgame"
+            android:layout_width="0dp"
+            android:padding="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/newgame"></ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tvTurn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="left"
+            android:text="Turn: AI"
+            android:textColor="#353535"
+            android:textSize="20dp"></TextView>
+
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"></View>
+
+
+
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/boardGame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="6.5"
+        android:weightSum="5.5"
+        android:padding="1dp"
+        android:orientation="vertical"
+        >
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/ai_player_names_back_btn"
+            android:layout_width="0dp"
+            android:padding="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:src="@drawable/profile_img"></com.mikhaellopez.circularimageview.CircularImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="#353535"
+                android:id="@+id/user_name_txt_Ai"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Ngô Phi Hùng"
+                android:textStyle="bold"
+                ></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/player_two_won_txt_AI"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6"
+                    android:textSize="20dp"
+                    android:textColor="#353535"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:fontFamily="@font/poppins_medium"
+                    ></TextView>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:src="@drawable/coin"></com.mikhaellopez.circularimageview.CircularImageView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.65"
+                android:layout_gravity="center"
+                android:layout_marginLeft="130dp"
+                android:foregroundGravity="center"
+                android:elevation="4dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="40dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/ai_game_seting_gifview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="7.5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/settings_gif" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

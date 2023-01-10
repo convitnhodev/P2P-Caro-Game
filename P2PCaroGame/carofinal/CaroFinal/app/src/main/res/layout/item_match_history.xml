@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/rounded_corners"
+    >
+    <ImageView
+        android:id="@+id/user_name_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/coin"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/user_name_2"
+        android:layout_toRightOf="@+id/user_name_1"
+        android:layout_width="150dp"
+        android:text="VS"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/ketqua_match"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/user_name_2"
+        android:gravity="center"
+        android:text="Hehe"
+        android:textColor="@color/black"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/thoigian_match"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_name_2"
+        android:gravity="center"
+        android:text="11/11/1111"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/user_name_1"></TextView>
+    <ImageButton
+        android:id="@+id/eye_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/ketqua_match"
+        android:textColor="@color/black"
+        android:background="@drawable/ic_eye_foreground">
+
+    </ImageButton>
+
+</RelativeLayout>

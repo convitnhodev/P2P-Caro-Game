@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F6F6F6"
+    android:layout_height="match_parent"
+    tools:context=".Caro_p2p">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0.75"
+
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+
+        <ImageView
+            android:id="@+id/offline_game_back_btn"
+            android:layout_width="0dp"
+            android:padding="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_Discovery"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_1"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Discovery"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_Tao_Phong"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:background="@drawable/button_2"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Create Room"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:textColor="#FF3D00"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_list_device"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:autoSizeMinTextSize="22dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#505050"></TextView>
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/list_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

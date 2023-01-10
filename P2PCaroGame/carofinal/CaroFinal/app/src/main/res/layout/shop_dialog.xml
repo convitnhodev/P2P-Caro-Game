@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="500dp"
+    android:background="@drawable/radiusln"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                   >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:id="@+id/user_gold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="6"
+                            android:textSize="30dp"
+                            android:textColor="#353535"
+                            android:layout_gravity="center"
+                            android:gravity="left"
+                            android:fontFamily="@font/poppins_medium"
+                            ></TextView>
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="1dp"
+                            android:src="@drawable/coin">
+
+                        </com.mikhaellopez.circularimageview.CircularImageView>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="SHOP"
+                        android:textAllCaps="false"
+                        android:textColor="#2C2C2C"
+                        android:textSize="20dp"
+
+                        android:textStyle="bold"></TextView>
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="1dp"
+                        android:layout_marginLeft="90dp"
+                        android:src="@drawable/exit"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.85"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.4"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="30dp"
+                        android:background="@drawable/x"></ImageView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.4"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:background="@drawable/o"
+
+                        ></ImageView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"></View>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/skin0"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Choose"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </Button>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.85"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/x1"
+                            android:layout_marginHorizontal="30dp"
+
+                            >
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.4"
+                        android:padding="15dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/o1"
+                            android:layout_marginHorizontal="30dp"
+
+                            >
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"></View>
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/skin1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Buy : 10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.15"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.85"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.4"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/x2"
+                        android:layout_marginHorizontal="30dp"
+
+                        >
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.4"
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/o2"
+                        android:layout_marginHorizontal="30dp"
+
+                        >
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"></View>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skin2"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_height="30dp"
+                android:background="@drawable/button_1"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Buy : 20"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/container_offline_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="68dp"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:alpha="0"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Welcome to Caro Game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:textColor="#101010"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            tools:alpha="1" />
+
+        <EditText
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/login_username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="Username"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:inputType="textEmailAddress"
+            ></EditText>
+        <EditText
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/login_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="Password"
+            android:drawablePadding="10dp"
+            android:padding="20dp"
+            android:inputType="textPassword"
+            ></EditText>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signinbtn"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_1"
+            android:fontFamily="@font/poppins_medium"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signupbtn"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_1"
+            android:fontFamily="@font/poppins_medium"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+      
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_logo_offline_menu"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/splash_src"
+        tools:visibility="gone"
+        />
+</FrameLayout>

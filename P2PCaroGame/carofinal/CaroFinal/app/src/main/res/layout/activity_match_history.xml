@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F4F4F4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F4F4F4"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+
+        <ImageView
+            android:id="@+id/match_history_back_btn"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@drawable/back_icon"></ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"></View>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:autoSizeMinTextSize="22dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.05"
+        android:text="Match History"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#505050"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.95"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_corners">
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeMinTextSize="22dp"></ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
